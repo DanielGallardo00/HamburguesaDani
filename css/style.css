@@ -1,0 +1,638 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css?family=Handlee|Montserrat:400,700&display=swap');
+
+/* 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Handlee', cursive; 
+color rojo: #fa573a
+color azul: #21242e
+*/
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 3%;
+}
+
+.container-fluid{
+    width: 100%;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* flotaciones */
+
+.row::after{
+clear: both;
+content: "";
+height: 0;
+display: block;
+}
+
+/* -------------------------------------------- */
+
+/* inicio header */
+
+header .nav_top{
+background-color:#21242e ;
+color: white;
+padding: 20px 0;
+}
+
+header .nav_top .container div{
+    float: left;
+    width: 25%;
+}
+
+header .nav_top .container div a{
+    color: white;
+    text-decoration: none;
+    font-size: 150%;
+}
+
+header .nav_top .container div a span{
+    display: none;
+}
+
+header .nav_top .container div a i{
+    color:#fa573a;
+}
+
+header .nav_top .container div:nth-child(3), header .nav_top .container div:last-child{
+    text-align: right;
+}
+/* ----------------------------------------------- */
+/* inicio nav */
+
+header nav.container{
+    padding: 20px 3%;
+}
+
+header .hamburguesa{
+    cursor: pointer;
+    float: right;
+}
+
+header .hamburguesa div{
+    border-top: 2px solid #aaa;
+    width: 1.875em;
+    margin-bottom: 0.625em;
+}
+header nav .logo{
+    float: left;
+    width: 6em;
+}
+
+header nav .menu{
+    padding-top: 60px ;
+}
+
+header nav .menu li{
+    padding: 1.250em;
+    text-align: center;
+    border-bottom: 1px solid #aaa;
+}
+
+header nav .menu li:last-child{
+    border: 0px;
+}
+
+header nav .menu li a{
+    text-decoration: none;
+    color: #21242e;
+    display: block;
+}
+
+header nav .menu li a.activo{
+    color: #fa573a;
+}
+
+header nav .menu li a:hover{
+    color: #fa573a;
+}
+
+/* ------------------------------------------------ */
+
+/* inicio heroe */
+
+.hero{
+    background-image: url(../img/fondo.jpg);
+    height: 37.5em;
+    background-size: cover;
+    background-position: center center;
+    background-color: #888;
+    background-blend-mode: multiply;
+}
+
+.hero>div{
+    color: white;
+    padding: 10% 3%;
+}
+
+.hero h1{
+    font-size: 2.5em;
+    font-family: 'Handlee', cursive;
+}
+
+.hero h2{
+    color: #fa573a;
+    font-size: 1,5em;
+    margin: 1em 0;
+}
+
+.hero p{
+    font-size: 1.15em;
+}
+
+.boton{
+    background-color: #fa573a;
+    display: inline-block;
+    padding: 1.15em;
+    color: white;
+    text-decoration: none;
+    margin-top:2em;
+    border: 1px solid transparent;
+    border-radius: 1em;
+}
+
+.boton:hover{
+    background-color: transparent;
+    color: #fa573a;
+    border: 1px solid #fa573a;
+}
+
+.boton i{
+    transition: .5s;
+}
+.boton:hover i{
+    transform: translate(5px);
+}
+
+.hero .social{
+    margin-top:2em;
+}
+
+.hero .social li{
+    display: inline-block;
+    font-size: 2em;
+    
+}
+
+.hero .social li:nth-child(2){
+    margin: 0 1em;
+}
+
+.hero .social li a{
+    text-decoration: none;
+    color: white;
+
+}
+/* ------------------------------------------------ */
+/* main */
+main section.container{
+    padding-top: 3.125em;
+    padding-bottom: 3.125em ;
+}
+
+main section h2{
+    color: black;
+    font-family:'Handlee', cursive ;
+    font-size: 2em;
+    text-align: center;
+}
+
+main section h2 span{
+    color: #fa573a;
+}
+
+main section .underline{
+    position: relative;
+    width: 200px;
+    margin: 0 auto;
+}
+
+main section .underline hr{
+    border-color: #fa573a;
+    position: absolute;
+    width: 100%;
+    top: -1.6px;
+}
+
+main section .underline span{color: #fa573a;
+display: block;
+text-align: center;
+font-weight: bold;
+}
+
+main section .flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main .flex article{
+    width: 100%;
+    padding:1.825em 0;
+    border-bottom: 1px solid #aaa;
+    text-align: center;
+}
+
+main .flex article:last-child{
+    border: 0px;
+}
+
+main section article div i{
+    color: #fa573a;
+    font-size: 2em;
+    padding: .8rem;  
+}
+
+main section article h3{
+font-size: 1.5em;
+font-weight: bold;
+color: #21242e;
+}
+
+main section article>*{
+    margin-bottom: 1em;
+}
+
+main section article a{
+    text-decoration: none;
+    color: #fa573a;
+}
+
+main section .enlace:hover i{
+transform: translate(10px) scale(1.2);
+}
+
+main section .enlace i{
+    transition: .5s;
+}
+
+main section .columna{
+    width: 100%;
+    padding: 1.25em 0;
+}
+
+main section .imagen{
+    width: 85%;
+    margin: 0 auto;
+   
+}
+
+main section .imagen .marco{
+    border: 3px solid #fa573a;
+    background-color: transparent;
+    transform: rotate(10deg);
+    transition: .5s;
+}
+
+main section .imagen .marco img{
+transform: rotate(-10deg);
+transition: .5s;
+}
+
+main section .imagen:hover .marco , main section .imagen:hover img{
+    transform: rotate(0);
+}
+
+main section .columna h3{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #21242e;
+}
+
+main section .columna h4{
+    color: #fa573a;
+    font-size: 1.2em;
+    margin-top: 1em;
+    margin-bottom: .5em;
+}
+
+main section .columna p{
+    color: #21242e;
+}
+
+main section .columna>*{
+    text-align: center;
+}
+/* --------------------------------------------------------- */
+/* footer */
+footer{
+    background-color:#21242e ;
+    color: white;
+    padding: 20px 0;
+}
+
+footer p a{
+    text-decoration: none;
+    color: white;
+}
+
+@media(min-width:48.063em){
+    header .nav_top .container div a span{
+        display: inline;
+        font-size: .6em;
+    }
+
+    main .flex article{
+        width: 50%;
+        padding:1.5em 1.5em;
+        text-align: center;
+        border: 0px;
+    }
+
+    main .flex article:last-child{
+        border-bottom: 0px;
+    }   
+
+}
+
+@media(min-width:62.750em){
+
+    header .hamburguesa{
+        display: none;
+        float: none;
+    }
+
+    header nav .menu{
+        padding-top: 0px ;
+        float: right;
+    }
+    header nav .menu li{
+        display: inline-block;
+        padding: .5em 0 0 1.25em ;
+        text-align: left;
+        border-bottom: 0;
+    }  
+    main section .flex .columna{
+        width: 50%;
+        padding: 2em;
+    } 
+}
+
+@media(min-width:75.0625em){
+    .hero>div{
+        color: white;
+        padding: 7% 3%;
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+    main .flex article{
+        width: 33.33%;
+    }
+    main .flex article:last-child{
+        width: 33.33%;
+    }
+}
+
+
+
+/* ----------------------------------------------------------- */
+
+/* pagina del blog */
+
+main article.noticia {
+position: relative;
+
+}
+
+main article div .fecha{
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 29px;
+    left: 0px;
+    color: white;
+    padding: 8px 2px;
+}
+
+
+main article .articulo{
+text-align: left;
+
+}
+ main article .articulo h3{
+
+color:#21242e;
+
+ }
+ main article .articulo h4{
+margin-top: 1em;
+color: #fa573a;
+    
+}
+ main article .articulo p{
+margin-top: 1em;
+color:#21242e;
+        
+}
+
+main article .articulo i{
+    font-size: 1em;
+}
+
+
+@media(min-width:48.063em){
+    
+    main article div .fecha{
+        top: 24px;
+        left: 24px;
+    }
+
+
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+/* pagina menu */
+
+.dark{
+    background-color: #21242e;
+} 
+main.dark section h2{
+    color: white;
+}
+main.dark section h3{
+    color: white;
+    text-align: left;
+    margin-top: 1em;
+    margin-left: 1.2em;
+    font-size: 1.2em;
+} 
+
+main.dark section .menu{
+    padding-top: 10px ;
+}
+
+main.dark section .menu li{
+    padding: .5em;
+    text-align: left;
+    margin: .3em 1em;
+    
+}
+
+main.dark section .menu li a{
+    padding: .5em;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+main.dark section .menu li.activo{
+    background-color: #fa573a;
+    border-radius: 15px;
+    padding: .5em;
+}
+
+main.dark section .menu li:hover{
+   background-color: #fa573a;
+   border-radius: 15px;
+   padding: .5em;
+}
+
+main.dark section .line{
+    position: relative;
+    width: 200px;
+    margin: 0em 1.5em;
+}
+
+main.dark section .line hr{
+    border-color: #fa573a;
+    position: absolute;
+    width: 80px;
+    top: -1px;
+}
+
+main.dark section p{
+    color: white;
+    text-align: left;
+    margin: 2em 0 0 1.5em;
+}
+
+ main.dark section .fila .imagen{
+    width: 100%;
+    margin-top: 0;
+}
+
+main.dark section .fila .texto i{
+    font-size: 1em;
+} 
+
+main.dark section .fila .imagen img{
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+main.dark section .fila .texto{
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 3em;
+
+}
+
+main.dark section .fila .texto h3{
+    margin-top: 3em;
+} 
+
+main.dark section .fila .precio{
+    width: 100%;
+}
+
+main.dark section .fila .precio p{
+    text-align: left;
+    color: #fa573a;
+    margin-top: 0;
+}
+
+
+
+
+
+@media(min-width:48.063em){
+    
+    main.dark section .fila .imagen img{
+    width: 85%;
+    margin-top: 0;
+      
+  }  
+  
+    main.dark section .fila .texto h3{
+        margin-top: 1em;
+    } 
+
+    main.dark section .fila .texto p{
+        margin-top: .5em;
+        
+    } 
+
+    main.dark section .fila .precio{
+        width: 25%;
+    }
+}
+
+@media(min-width:62.750em){
+    main.dark section .columna.uno{
+        width: 30% ;  
+      }
+  
+    main.dark section .columna.dos{
+        width: 70% ;  
+        }
+
+    main.dark section .fila{
+        width: 100%;
+        }
+  
+    main.dark section .fila .imagen{
+        width: 30%;
+        height: 100px;
+        margin-top: 0;
+          
+      }
+
+    main.dark section .fila .imagen img{
+        width: 100%;
+        margin-top: 0;
+          
+      }  
+
+    main.dark section .fila .texto{
+          width: 60%;
+      }
+
+    main.dark section .fila .texto h3{
+        margin-top: 0;
+    } 
+
+    main.dark section .fila .texto p{
+        margin-top: .5em;
+        
+    } 
+
+
+    main.dark section .fila .precio{
+          width: 10%;
+      }
+
+   
+}
+
+@media(min-width:75.0625em){
+   
+}
